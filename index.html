@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta name="description" content="A gallery of our favorite memories.">
+  <title>Our Memories</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Our Memories</h1>
+      <p class="subtitle">A collection of special moments 💙</p>
+  <button class="enter-btn" id="enterBtn">Open Gallery</button>
+
+    </div>
+  </div>
+
+  <main class="gallery-page hidden" id="galleryPage" aria-hidden="true">
+    <header class="header">
+      <h2>Our Memories</h2>
+      <p class="hint">Click a photo to view details</p>
+    </header>
+    <section class="grid" id="grid">
+      <!-- Images inserted by script -->
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+<div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" tabindex="0">
+    <button class="close" id="lbClose" aria-label="Close">&times;</button>
+    <img id="lbImg" src="" alt="Expanded photo">
+    <div class="caption" id="lbCaption"></div>
+    <div class="controls">
+      <button id="prev">‹</button>
+      <button id="next">›</button>
+    </div>
+  </div>
+
+<audio id="bgMusic" src="audio/mariah.mp3" loop></audio>
+<button class="music-btn" id="musicBtn">🎵</button>
+<script src="script.js"></script>
+
+</body>
+</html>
