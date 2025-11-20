@@ -23,7 +23,31 @@ const photos = [
 { src: "images/15.jpg", caption: "pertama kali badminton bersama temen temen abiii" }, 
 { src: "images/16.jpg", caption: "Pertemuan pertama abi dengan sepupu aku, first debut lagi di wa grup keluarga" }, { src: "images/17.jpg", caption: "Selfiee cekrekk" }, { src: "images/18.jpg", caption: "Outfit cek buat wisuda akuuu wkwk akhirnya pake batik" }, 
 { src: "images/19.jpg", caption: "Ini jadinya pake batik mwhehe ganteng banget kan pacal akuuu" }, 
-{ src: "images/20.jpg", caption: "Jalan jalan bareng keluarga dan temen akuuuu awww" }, { src: "images/21.jpg", caption: "Pap karena aku ngambek dan marah, abisnya ketemu cewe ga bilang dulu sama akuu!!!" }
+{ src: "images/20.jpg", caption: "Jalan jalan bareng keluarga dan temen akuuuu awww" }, { src: "images/21.jpg", caption: "Pap karena aku ngambek dan marah, abisnya ketemu cewe ga bilang dulu sama akuu!!!" }, 
+  { src: "images/22.jpg", caption: "Pap hari raya Galungaannn!!!" }, { src: "images/23.jpg", caption: "hehe ini aku yang minta pap, ganteng kannnn" }, 
+  { src: "images/24.jpg", caption: "lagi atit huhu :(" }, { src: "images/25.jpg", caption: "ini aku mam lumpia di pantai sm almi" },
+  { src: "images/26.jpg", caption: "hasil kerja keras pacal aku buat penjor" }, { src: "images/27.jpg", caption: "bawa penjor, harusnya sama aku biar aku bantuinn, bantu ribetin maksdnya hehe" },
+  { src: "images/28.jpg", caption: "Pap abis masang penjorrr" }, { src: "images/29.jpg", caption: "ini lagi di kukusan keknya, berembun banget " },
+  { src: "images/30.jpg", caption: "jalan jalan lagiiii, walo ayang agak kesel hehe maap sayang" }, { src: "images/31.jpg", caption: "celpi celpi" },
+  { src: "images/32.jpg", caption: "di potoin ayanggg" }, { src: "images/33.jpg", caption: "gantian aku potoin ayang sekalian nyoba tren tiktok" },
+  { src: "images/34.jpg", caption: "Celpie lagiii" }, { src: "images/35.jpg", caption: "potoin ayang lagi xixiixi" },
+  { src: "images/36.jpg", caption: "indahnya pemandangan ada air, pohon-pohon" }, { src: "images/37.jpg", caption: "walpapernya gapernah bener emang:)" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ];
