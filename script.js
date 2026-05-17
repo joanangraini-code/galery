@@ -31,8 +31,8 @@ const photos = [
   { src: "images/30.jpg", caption: "jalan jalan lagiiii, walo ayang agak kesel hehe maap sayang" }, { src: "images/31.jpg", caption: "celpi celpi" },
   { src: "images/32.jpg", caption: "di potoin ayanggg" }, { src: "images/33.jpg", caption: "gantian aku potoin ayang sekalian nyoba tren tiktok" },
   { src: "images/34.jpg", caption: "Celpie lagiii" }, { src: "images/35.jpg", caption: "potoin ayang lagi xixiixi" },
-  { src: "images/36.jpg", caption: "indahnya pemandangan ada air, pohon-pohon" }, { src: "images/37.jpg", caption: "walpapernya gapernah bener emang:)" }, { src: "images/vid1.jpg", caption: "kicaw dulu kawan:)", type: "video" },
-  { src: "images/vid2.jpg", caption: "happy birthday abiiii"), type: "video" }, { src: "images/vid3.jpg", caption: "mancing duluuu", type: "video" }
+  { src: "images/36.jpg", caption: "indahnya pemandangan ada air, pohon-pohon" }, { src: "images/37.jpg", caption: "walpapernya gapernah bener emang:)" }, { src: "images/vid1.mp4", caption: "kicaw dulu kawan", type: "video" },
+  { src: "images/vid2.mp4", caption: "happy birthday abiiii", type: "video" }, { src: "images/vid3.mp4", caption: "mancing duluuu", type: "video" }
 
 
 
@@ -166,6 +166,7 @@ document.addEventListener("mouseout", (e) => {
   if (e.target.tagName === "VIDEO") {
     e.target.pause();
     e.target.currentTime = 0;
+  }
 });
 
 // === INIT ===
