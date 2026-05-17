@@ -155,7 +155,6 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeLightbox();
   if (e.key === "ArrowLeft") showPrev();
   if (e.key === "ArrowRight") showNext();
-}
     });
   document.addEventListener("mouseover", (e) => {
   if (e.target.tagName === "VIDEO") {
