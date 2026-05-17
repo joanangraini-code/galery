@@ -31,7 +31,11 @@ const photos = [
   { src: "images/30.jpg", caption: "jalan jalan lagiiii, walo ayang agak kesel hehe maap sayang" }, { src: "images/31.jpg", caption: "celpi celpi" },
   { src: "images/32.jpg", caption: "di potoin ayanggg" }, { src: "images/33.jpg", caption: "gantian aku potoin ayang sekalian nyoba tren tiktok" },
   { src: "images/34.jpg", caption: "Celpie lagiii" }, { src: "images/35.jpg", caption: "potoin ayang lagi xixiixi" },
-  { src: "images/36.jpg", caption: "indahnya pemandangan ada air, pohon-pohon" }, { src: "images/37.jpg", caption: "walpapernya gapernah bener emang:)" }
+  { src: "images/36.jpg", caption: "indahnya pemandangan ada air, pohon-pohon" }, { src: "images/37.jpg", caption: "walpapernya gapernah bener emang:)" }, { src: "images/vid1.jpg", caption: "kicaw dulu kawan:)", type: "video" },
+  { src: "images/vid2.jpg", caption: "happy birthday abiiii"), type: "video" }, { src: "images/vid3.jpg", caption: "mancing duluuu", type: "video" }
+
+
+
 
 
 
@@ -81,11 +85,30 @@ function openGallery() {
 
 function renderGallery() {
   grid.innerHTML = photos
-    .map(
-      (p, i) => `
-      <img src="${p.src}" alt="${p.caption}" data-index="${i}" loading="lazy">
-    `
-    )
+    .map((p, i) => {
+
+      // VIDEO
+      if (p.type === "video") {
+        return `
+          <video
+            src="${p.src}"
+            data-index="${i}"
+            class="gallery-video"
+            muted
+          ></video>
+        `;
+      }
+
+      // IMAGE
+      return `
+        <img
+          src="${p.src}"
+          alt="${p.caption}"
+          data-index="${i}"
+          loading="lazy"
+        >
+      `;
+    })
     .join("");
 }
 
@@ -114,7 +137,10 @@ function showNext() {
 enterBtn.addEventListener("click", openGallery);
 
 grid.addEventListener("click", (e) => {
-  if (e.target.tagName === "IMG") {
+if (
+  e.target.tagName === "IMG" ||
+  e.target.tagName === "VIDEO"
+) {
     const index = parseInt(e.target.dataset.index, 10);
     openLightbox(index);
   }
@@ -129,6 +155,17 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeLightbox();
   if (e.key === "ArrowLeft") showPrev();
   if (e.key === "ArrowRight") showNext();
+}
+    });
+  document.addEventListener("mouseover", (e) => {
+  if (e.target.tagName === "VIDEO") {
+    e.target.play();
+  }
+});
+document.addEventListener("mouseout", (e) => {
+  if (e.target.tagName === "VIDEO") {
+    e.target.pause();
+    e.target.currentTime = 0;
 });
 
 // === INIT ===
